@@ -36,3 +36,24 @@ console.log(isUnique);
 // "isUnder25" as an alternative.
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 console.log(isValid);
+
+// If all numbers are divisible by 5
+// cache the result in a variable
+let allDivisibleBy5 = true
+console.log(allDivisibleBy5);
+// 
+// If the first number is larger than the last
+// cache the results in a variable
+// const firstNumber = 10
+// const lastNumber = 5
+// let result = true
+// console.log(firstNumber > lastNumber);
+// 
+// Subtract the first number from the second number
+const firstNumber = 10
+const secondNumber = 15
+const = secondNumber - firstNumber;
+console.log(value);
+// 
+//Multiply the result by the third number 
+
