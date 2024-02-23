@@ -85,18 +85,28 @@
 
 //PART 2
 //Facts given in order to calculate info 
+// const efficiency55 = 30;
+// const efficiency60 = 28;
+// const efficiency75 = 23;
+const tDistance = 1500;
+const fEfficiency = [30, 28, 23];
+const fuelCost = 3;
+const budget = 175;
+
+//How many gallons of fuel will you need for the entire trip @ each mph/mpg rate 
+//Calculate this: divide total distance (1500) at the cars Fuel efficiency 55, 60, 75 mph (30, 28, 23 mpg)
+//At 55mph = 50 gal needed, 60mph = 53.5714 gal needed, 75mph = 65.2173
 const totalDistance = 1500;
-const efficiency55 = 30;
-const efficiency60 = 28;
-const efficiency75 = 23;
-const fuelBudget = 175;
-const costOfFuel = 3;
+const fuelEfficiency = 23;
 
-//How many gallons of fuel will you need for the entire trip @ each mph rate
-//Calculate this by dividing the total distance by fuel efficiency at each mph
-const  gallons55 = totalDistance / efficiency55;
-const gallons60 = totalDistance / efficiency60;
-const gallons70 = totalDistance / efficiency75;
+const gallonsNeeded = totalDistance / fuelEfficiency;
+console.log("Gallons of fuel needed:", gallonsNeeded);
+console.log('----------')
 
+//At 50 mph (28 mpg)/ KEPT GETTING ERR THIS WAY SO DID EACH ABOVE INDIVIDUALLY
+// const gallonsNeeded = totalDistance / fuelEfficiency;
+// const totalDistance = 1500;
+// const fuelEfficiency = 28;
+// console.log("Gallons of fuel needed:", gallonsNeeded);
 
 
