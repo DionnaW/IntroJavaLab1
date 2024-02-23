@@ -88,21 +88,21 @@
 // const efficiency55 = 30;
 // const efficiency60 = 28;
 // const efficiency75 = 23;
-const tDistance = 1500;
-const fEfficiency = [30, 28, 23];
-const fuelCost = 3;
-const budget = 175;
-
+// const tDistance = 1500;
+// const fEfficiency = [30, 28, 23];
+// const fuelCost = 3;
+// const budget = 175;
+// 
 //How many gallons of fuel will you need for the entire trip @ each mph/mpg rate 
 //Calculate this: divide total distance (1500) at the cars Fuel efficiency 55, 60, 75 mph (30, 28, 23 mpg)
-//At 55mph = 50 gal needed, 60mph = 53.5714 gal needed, 75mph = 65.2173
-const totalDistance = 1500;
-const fuelEfficiency = 23;
-
-const gallonsNeeded = totalDistance / fuelEfficiency;
-console.log("Gallons of fuel needed:", gallonsNeeded);
-console.log('----------')
-
+//At 55mph/30mpg = 50 gal, 60mph/28mpg = 53.5714 gal, 75mph/23mpg = 65.2173 gal
+// const totalDistance = 1500;
+// const fuelEfficiency = 23;
+// 
+// const gallonsNeeded = totalDistance / fuelEfficiency;
+// console.log("Gallons of fuel needed:", gallonsNeeded);
+// console.log('----------')
+// 
 //At 50 mph (28 mpg)/ KEPT GETTING ERR THIS WAY SO DID EACH ABOVE INDIVIDUALLY
 // const gallonsNeeded = totalDistance / fuelEfficiency;
 // const totalDistance = 1500;
@@ -110,3 +110,28 @@ console.log('----------')
 // console.log("Gallons of fuel needed:", gallonsNeeded);
 
 
+//is the budget enough to cover the fuel expense?
+//calculate the cost of fuel based on the number of gal needed and compare to budget
+//use gal needed for previous exapmple
+// const totalDistance = 1500;
+// const fuelEfficiency = 23;
+// const fuelCost = 3;
+// const budget = 175;
+
+//At 55mph/30mpg the fuel cost is $150! At 60mph/28mpg the fuel cost is $160.714! At 70mph/23mpg the fuel cost is $195.652
+// const gallonsNeeded = totalDistance / fuelEfficiency;
+// const cost = gallonsNeeded * fuelCost;
+// console.log(cost);
+// console.log('----------')
+
+
+//Hoe long will the trip take in hours?
+//divide total distance by the traveling speed to get how many hours driven
+const totalDistance = 1500;
+const speed = 70;
+
+//At 55mph it takes 27.27 hours drive. At 60mph it takes 25 hours. At 75mph it takes 21.428 hours 
+const duration = totalDistance / speed;
+console.log("Trip duration in hours:", duration);
+
+//With the budget it would make sense to travel at 55mph, so there could be $50 to use for food!
