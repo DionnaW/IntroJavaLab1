@@ -85,9 +85,9 @@
 
 //PART 2
 //Facts given in order to calculate info 
-// const efficiency55 = 30;
-// const efficiency60 = 28;
-// const efficiency75 = 23;
+/
+/
+/
 // const tDistance = 1500;
 // const fEfficiency = [30, 28, 23];
 // const fuelCost = 3;
