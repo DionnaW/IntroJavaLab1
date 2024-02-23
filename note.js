@@ -22,7 +22,7 @@ console.log('----------')
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
-const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+const isOver25 = n1 < 25 || n2 > 25 || n3 > 25 || n4 > 25;
 console.log(isOver25);
 console.log('---------')
 
@@ -38,7 +38,7 @@ console.log('----------')
 // for convenience. Note how we negate isOver25 using
 // the ! operator. We could also have tested for 
 // "isUnder25" as an alternative.
-const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
+const isValid = isSum50 && isTwoOdd && isOver25 && isUnique;
 console.log(isValid);
 console.log('----------')
 
@@ -46,7 +46,7 @@ console.log('----------')
 // cache the result in a variable
 let allDivisibleBy5 = true
 console.log(allDivisibleBy5);
- 
+console.log('----------')
 
 // If the first number is larger than the last
 // cache the results in a variable
@@ -74,6 +74,7 @@ console.log('----------')
 
 // Change the way that isOver25 calculates so that we
 //do not need to use the NOT operator(!) in other logic
+//Changed one in line 25 to less than and deleted the (!) in line 41 to make this happen
 //comparisons. Rename the variables as appropriate
 
 
